@@ -1,0 +1,77 @@
+.task-container {
+    width: 100%;
+    height: auto;
+    border: 1px solid black;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    margin: 10px;
+}
+/*Задание №1*/
+#clock {
+    font: 2em Arial, Helvetica, sans-serif; 
+}
+
+/*Задание №2*/
+img {
+    width: 100%;
+}
+#goods {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    font: 1em Arial, Helvetica, sans-serif;
+    border: none;    
+}
+.item {
+    max-width: 20%;
+    border-radius: 5px;
+    border: 1px solid black;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+.item>h3 {
+    margin: 0;
+    padding: 2px;
+    padding-left: 10px;
+}
+
+.item-price {
+    padding: 2px;
+    text-align: right;
+}
+.item-description {
+    margin: 10px 0px 0px 0px;
+    padding: 0px 5px; 
+}
+
+/*Задание №3*/
+#task03 {
+    flex-direction: row;
+    justify-content: center;
+}
+#traffic-ligth {
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.sign {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 1px solid black;
+    background-color: black;
+}
+
+#red.active {
+    background-color: red;    
+}
+#green.active {
+    background-color: green;    
+}
+#yellow.active {
+    background-color: yellow;    
+}
+
