@@ -1,16 +1,15 @@
 //Задание №1
+let hours = document.getElementById('hours');
+hours.style.color= "blue";
+let minutes = document.getElementById('minutes');
+minutes.style.color= "silver";
+let seconds = document.getElementById('seconds');
+seconds.style.color= "red";
 function displayClocks() {
-    let hours = document.getElementById('hours');
-    let minutes = document.getElementById('minutes');
-    let seconds = document.getElementById('seconds');
     let dt = new Date();
     hours.innerText = dt.getHours().toString().padStart(2, "0");
-    hours.style.color= "blue";
-	minutes.innerText = dt.getMinutes().toString().padStart(2, "0");
-    minutes.style.color= "whitegray";
+    minutes.innerText = dt.getMinutes().toString().padStart(2, "0");
     seconds.innerText = dt.getSeconds().toString().padStart(2, "0");
-    seconds.style.color= "red";
-    //console.log(hours.innerText+":"+minutes.innerText+":"+seconds.innerText);
 }
 displayClocks();
 setInterval(displayClocks, 1000);
@@ -113,10 +112,10 @@ function dayDescription(n, names) {
     if(n_str=="1") {
         return names[0];
     }
-    if(n_str>="2" && n_str<="4") {
+    if(n_str>="2" && n_str<="4" && !(n >=12 && n <= 14)) {
         return names[1];
     }
-    else if(n_str>="5") {
+    else if(n_str>="5" || n_str=="0" || (n >=12 && n <= 14)) {
         return names[2];
     }
 }
